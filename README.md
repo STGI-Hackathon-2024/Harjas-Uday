@@ -3,7 +3,11 @@
 ## Objective
 This project automates the screening of resumes and inputs candidate details into a Microsoft Form, streamlining the recruitment process for HR teams. 
 NOTE: Make sure no other instance of browser is opened in your PC. Make sure to clear your email-attachements file.
-Video Link: 
+
+
+
+Video Link: https://drive.google.com/file/d/1t6lCfoZ6mvIv3jJ5kHaGCPOkqgumZQzj/view?usp=sharing
+PPT LINK: https://www.canva.com/design/DAGSFhbn-Fw/gpGKqNEvr45jOd9gb_9_BQ/view?utm_content=DAGSFhbn-Fw&utm_campaign=designshare&utm_medium=link&utm_source=editor
 
 ## Main Files
 - **Main.xaml**: The main execution file for the project.
