@@ -98,7 +98,7 @@
       <ui:SendMail.Files>
         <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
           <InArgument x:TypeArguments="x:String">
-            <Literal x:TypeArguments="x:String">C:\Users\lavan\Documents\coding\stgi\template.xlsx</Literal>
+            <Literal x:TypeArguments="x:String">template.xlsx</Literal>
           </InArgument>
         </scg:List>
       </ui:SendMail.Files>

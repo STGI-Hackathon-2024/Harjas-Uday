@@ -167,7 +167,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Flowchart sap:VirtualizedContainerService.HintSize="880.8000000000001,488" sap2010:WorkflowViewState.IdRef="Flowchart_2">
+    <Flowchart sap:VirtualizedContainerService.HintSize="880.8000000000002,284.84000000000003" sap2010:WorkflowViewState.IdRef="Flowchart_2">
       <Flowchart.Variables>
         <Variable x:TypeArguments="x:String" Name="variable1" />
       </Flowchart.Variables>
@@ -290,7 +290,7 @@
                 <av:PointCollection x:Key="ConnectorLocation">355,350 535,350</av:PointCollection>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="DATA PROCESSING" sap:VirtualizedContainerService.HintSize="607.6,4804" sap2010:WorkflowViewState.IdRef="Sequence_13">
+            <Sequence DisplayName="DATA PROCESSING" sap:VirtualizedContainerService.HintSize="607.6,4826" sap2010:WorkflowViewState.IdRef="Sequence_13">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:Int32" Name="startloop" />
                 <Variable x:TypeArguments="x:String" Name="variable2" />
@@ -311,7 +311,7 @@
                   <InArgument x:TypeArguments="x:Int32">2</InArgument>
                 </Assign.Value>
               </Assign>
-              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="573.6,4630" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="573.6,4652" sap2010:WorkflowViewState.IdRef="TryCatch_2">
                 <TryCatch.Variables>
                   <Variable x:TypeArguments="x:String" Name="Status" />
                 </TryCatch.Variables>
@@ -322,7 +322,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
                 <TryCatch.Try>
-                  <ui:ForEachFileX DisplayName="For Each File in Folder" Filter="*.pdf" Folder="C:\Users\lavan\Documents\coding\stgi\emailattachments" sap:VirtualizedContainerService.HintSize="536,4375.6" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="True" OrderBy="CreationDateNewFirst" SkipFolderWithoutPermission="True">
+                  <ui:ForEachFileX DisplayName="For Each File in Folder" Filter="*.pdf" Folder="emailattachments" sap:VirtualizedContainerService.HintSize="536,4397.6" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="True" OrderBy="CreationDateNewFirst" SkipFolderWithoutPermission="True">
                     <ui:ForEachFileX.Body>
                       <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
                         <ActivityAction.Argument1>
@@ -331,13 +331,13 @@
                         <ActivityAction.Argument2>
                           <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
                         </ActivityAction.Argument2>
-                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="502,4112.8" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="502,4134.8" sap2010:WorkflowViewState.IdRef="Sequence_15">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Sequence DisplayName="DATA PARCING" sap:VirtualizedContainerService.HintSize="468,4086.8" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                          <Sequence DisplayName="DATA PARCING" sap:VirtualizedContainerService.HintSize="468,4074.8" sap2010:WorkflowViewState.IdRef="Sequence_16">
                             <Sequence.Variables>
                               <Variable x:TypeArguments="x:String" Name="data" />
                               <Variable x:TypeArguments="x:String" Name="emailAdress" />
@@ -350,7 +350,7 @@
                               <Variable x:TypeArguments="x:String" Name="ReportsTo" />
                               <Variable x:TypeArguments="x:String" Name="Department" />
                               <Variable x:TypeArguments="x:String" Name="JsonObj" />
-                              <Variable x:TypeArguments="x:String" Name="DateTime" />
+                              <Variable x:TypeArguments="x:String" Name="DateTimeA" />
                               <Variable x:TypeArguments="x:String" Name="MachineName" />
                               <Variable x:TypeArguments="x:String" Name="DateAndTime" />
                               <Variable x:TypeArguments="x:String" Name="ProcessName" />
@@ -441,7 +441,14 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:Matches>
-                            <ui:Matches BuilderPattern="(?&lt;=.*\n)(.*)(?=\nStart Date)" DisplayName="Startdate" FirstMatch="[StartDate]" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="Matches_8" Input="[data]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=.*\\n)(.*)(?=\\nStart Date)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=.*\n)(.*)(?=\nStart Date)" RegexOption="IgnoreCase, Compiled" />
+                            <ui:Matches BuilderPattern="(?&lt;=.*\n)(.*)(?=\nStart Date)" DisplayName="Startdate" FirstMatch="[StartDate]" sap:VirtualizedContainerService.HintSize="434,56.8" sap2010:WorkflowViewState.IdRef="Matches_8" Input="[data]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=.*\\n)(.*)(?=\\nStart Date)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=.*\n)(.*)(?=\nStart Date)" RegexOption="IgnoreCase, Compiled">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:Matches>
                             <ui:Matches BuilderPattern="(?&lt;=.*\n)(.*)(?=\nReports To)" DisplayName="ReportsTo" FirstMatch="[ReportsTo]" sap:VirtualizedContainerService.HintSize="434,56.8" sap2010:WorkflowViewState.IdRef="Matches_9" Input="[data]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=.*\\n)(.*)(?=\\nReports To)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=.*\n)(.*)(?=\nReports To)" RegexOption="IgnoreCase, Compiled">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -471,7 +478,7 @@
                                 <OutArgument x:TypeArguments="x:String">[DateforForm]</OutArgument>
                               </Assign.To>
                               <Assign.Value>
-                                <InArgument x:TypeArguments="x:String">02/10/2023</InArgument>
+                                <InArgument x:TypeArguments="x:String">02/12/2021</InArgument>
                               </Assign.Value>
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
