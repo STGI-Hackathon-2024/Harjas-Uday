@@ -1,7 +1,9 @@
 # FILLBOT
 
 ## Objective
-This project automates the screening of resumes and inputs candidate details into a Microsoft Form, streamlining the recruitment process for HR teams.
+This project automates the screening of resumes and inputs candidate details into a Microsoft Form, streamlining the recruitment process for HR teams. 
+NOTE: Make sure no other instance of browser is opened in your PC. Make sure to clear your email-attachements file.
+Video Link: 
 
 ## Main Files
 - **Main.xaml**: The main execution file for the project.
